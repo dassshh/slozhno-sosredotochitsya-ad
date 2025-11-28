@@ -1,0 +1,1 @@
+https://github.com/dassshh/slozhno-sosredotochitsya-ad readme файл
