@@ -1,16 +1,52 @@
-/*
-  Специально для светлой темы при наличии класса.
-  Здесь окажутся стили, которые нужно переопределить принудительно,
-  переключая тему
-*/
 
 :root.theme-light {
-  /* сохраните этот селектор в приведённом виде.
-    Так стили написанные ниже будут иметь больший вес,
-    чем стили в медиазапросе предпочтений пользователя
-  */
+  --font-family:'IBM Plex mono';
+  --font-weight-normal: 400;
+  --font-weight-bold: 700;
+  --font-size-h1: 157px;
+  --font-size-base: 18px;
+  --color-h1:#FFC2E6;
+  --accent-color:#FF8DCB;
+  --font-size-h2:#000028;
+  --background-h2-text: #FF8DCB;
+  --color-h3:#353430;
+  --color-text:#353430;
+  --shadow: 4px 4px 0 var(--accent-color);
+  --shadow-small: 2px 2px 0 var(--accent-color);
+  --button-hover: rgba(255, 0, 112, 0.4);
+  --decor-color:#353430;
+  --bg-image: url('../images/cover-image-light.png');
+  --bg-color: #FFF1F7;
 }
 
-.theme-light .page {
-  /* Вам также нужно будет написать ряд подобных селекторов */
+.theme-light .decorated-element {
+  display: none;
+}
+.theme-light .header__theme-menu-button {
+  color: var(--decor-color);
+}
+.theme-light .header__theme-menu-button_active {
+  border-color: var(--decor-color);
+}
+.theme-light .header__theme-menu-button:hover {
+  border-color: var(--button-hover);
+}
+
+.theme-light .header__theme-menu-button:focus-visible {
+  border-block-end-color: var(--decor-color);
+}
+
+.theme-light .link {
+  text-shadow: var(--shadow-small);
+}
+
+.theme-light .link:hover {
+  border-block-end-color: var(--text-color);
+}
+
+.theme-light .link:focus-visible {
+  border-color: var(--text-color);
+}
+.theme-light .ellipse {
+  display: none;
 }
