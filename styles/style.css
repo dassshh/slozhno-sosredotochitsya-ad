@@ -19,14 +19,14 @@
   height: 25px;
 }
 .decorated-zone::before {
-  top: 10px;
-  right: 10px;
+  top: 0px;
+  right: -11px;
   border-block-start: 1px solid var(--decor-color);
   border-inline-end: 1px solid var(--decor-color);
 }
 .decorated-zone::after {
-  bottom: 10px;
-  left: 10px;
+  bottom: 19px;
+  left: 0px;
   border-block-end: 1px solid var(--decor-color);
   border-inline-start: 1px solid var(--decor-color);
 }
@@ -51,8 +51,8 @@
   display: grid;
   grid-template-rows: 1fr min-content 1fr;
   min-height: 100vb;
-  padding: 10px;
-  margin-block-end: 40px;
+  padding: 0px;
+  margin-block-end: 19px;
   background-image: var(--bg-image);
 }
 .header__theme-menu {
@@ -63,11 +63,12 @@
   display: flex;
   flex-direction: column;
   gap: 10px;
-  margin-block-start: 75px;
+  margin-block-start: 37px;
+  margin-right: -11px;
 }
 .header__theme-menu-button {
   color: var(--decor-color);
-  padding: 2px 13px;
+  padding: 2px 16px;
   border: 1px solid transparent;
   background: transparent;
 }
@@ -85,24 +86,25 @@
   color: var(--color-h1);
   line-height: 83%;
   text-shadow: var(--shadow);
-  margin-block-end: 55px;
-  margin-block-start: 65px;
+  margin-block-end: 60px;
+  margin-block-start: 50px;
   font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+  font-size: var(--font-size-h1);
   font-weight: var(--font-weight-bold);
 }
 .no-focus-p {
-  color: var(--font-size-h2);
+  font-size: var(--font-size-h2);
   background-color: var(--background-h2-text);
   font-weight: var(--font-weight-bold);
   margin-block-end: -110px;
   max-width: 100%;
-  max-width: 355px;
+  width: 355px;
   margin-inline-start: auto;
 }
 .main {
   display: flex;
   flex-direction: column;
-  gap: 50px;
+  gap: 80px;
 }
 .text-1,
 .text-2,
@@ -110,27 +112,29 @@
 .gallery-section {
   display: flex;
   flex-direction: column;
-  gap: 20px;
-  padding: 0 10px;
+  gap: 27px;
 }
 .question-text {
   color: var(--color-h3);
   margin-block-end: 10px;
   font-size: var(--font-size-base);
+  font-weight: var(--font-weight-bold);
+  line-height: 23.4px;
 }
 .content-grid {
   display: grid;
-  gap: 20px;
+  gap: 15px;
 }
 .name-text {
   background-color: var(--background-h2-text);
   color: var(--font-size-h2);
   height: auto;
-  min-height: 23px;
+
 }
 .text-main {
   color: var(--color-text);
   font-style: Regular;
+  font-size: var(--font-size-base);
 }
 
 .link {
@@ -154,11 +158,11 @@
 }
 .card {
   display: grid;
-  gap: 10px;
+  gap: 14px;
 }
 .tips-grid {
   display: grid;
-  gap: 20px;
+  gap: 22px;
 }
 .tip-title {
   background-color: var(--accent-color);
@@ -182,14 +186,14 @@
   display: grid;
   place-items: center;
   min-height: 100vb;
-  padding: 10px;
+  margin-block-start: 10px;
 }
 .name-text-normal {
   font-weight: 100px;
   font-style: Regular;
 }
 /* Планшетная версия (768px+) */
-@media (width >= 768px) {
+@media (min-width: 768px) {
   .page {
     padding: 20px;
   }
