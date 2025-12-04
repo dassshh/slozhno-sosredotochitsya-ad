@@ -1,4 +1,4 @@
-.theme-light {
+:root.theme-light {
   --font-family: 'IBM Plex mono';
   --font-weight-normal: 400;
   --font-weight-bold: 700;
@@ -18,7 +18,34 @@
   --bg-image: url('../images/cover-image-light.png');
   --bg-color: #FFF1F7;
 }
-
+@media (prefers-color-scheme: light) {
+  :root {
+   --font-family: 'IBM Plex mono';
+  --font-weight-normal: 400;
+  --font-weight-bold: 700;
+  --font-size-h1: 116px;
+  --font-size-base: 18px;
+  --color-h1: #FFC2E6;
+  --accent-color: #FF8DCB;
+  --font-size-h2: 18px;
+  --color-p: #353430;
+  --background-h2-text: #FF8DCB;
+  --color-h3: #353430;
+  --color-text: #353430;
+  --shadow: 4px 4px 0 var(--accent-color);
+  --shadow-small: 2px 2px 0 var(--accent-color);
+  --button-hover: rgba(255, 0, 112, 0.4);
+  --decor-color: #353430;
+  --bg-image: url('../images/cover-image-light.png');
+  --bg-color: #FFF1F7;
+  }
+  .decorated-element {
+    display: none;
+  }
+  .ellipse {
+    display: none;
+  }
+}
 .theme-light .decorated-element {
   display: none;
 }
@@ -53,4 +80,10 @@
 
 .theme-light .ellipse {
   display: none;
+}
+.theme-light .page {
+  background-color: var(--bg-color);
+}
+.theme-light .header {
+  background-image: var(--bg-image);
 }
