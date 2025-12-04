@@ -1,5 +1,5 @@
 :root {
-  --font-family: 'IBM Plex mono';
+--font-family: 'IBM Plex mono';
   --font-weight-normal: 400;
   --font-weight-bold: 700;
   --font-size-h1: 116px;
@@ -9,6 +9,7 @@
   --font-size-h2: 18px;
   --background-h2-text: #FF0070;
   --color-h3: #FF0070;
+  --color-name-text: #000028;
   --color-text: #F1B2CE;
   --shadow: 4px 4px 0 var(--accent-color);
   --shadow-small: 2px 2px 0 var(--accent-color);
