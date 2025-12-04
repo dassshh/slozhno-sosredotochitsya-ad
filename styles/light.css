@@ -10,6 +10,7 @@
   --color-p: #353430;
   --background-h2-text: #FF8DCB;
   --color-h3: #353430;
+  --color-name-text: #353430;
   --color-text: #353430;
   --shadow: 4px 4px 0 var(--accent-color);
   --shadow-small: 2px 2px 0 var(--accent-color);
@@ -31,6 +32,7 @@
   --color-p: #353430;
   --background-h2-text: #FF8DCB;
   --color-h3: #353430;
+  --color-name-text: #353430;
   --color-text: #353430;
   --shadow: 4px 4px 0 var(--accent-color);
   --shadow-small: 2px 2px 0 var(--accent-color);
