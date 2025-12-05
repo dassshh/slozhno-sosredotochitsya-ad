@@ -50,8 +50,8 @@
 .header {
   display: grid;
   grid-template-rows: 1fr min-content 1fr;
-  max-height: 100vh;
   padding: 0px;
+  max-height: 100vh;
   background-image: var(--bg-image);
   margin-bottom: 66px;
 }
@@ -162,15 +162,15 @@
   border-color: var(--color-text);
 }
 .cards-grid {
-  margin-top:20px;
   display: grid;
+  margin-top: 20px;
   gap: 24px; 
 }
 .text-3 {
-  margin-top:-10px;
+  margin-top: -10px;
 }
 .tips-grid {
-  margin-top:20px;
+  margin-top: 20px;
   display: grid;
   gap: 30px;
 }
@@ -197,7 +197,7 @@
 .footer {
   display: grid;
   place-items: center;
-  min-height: 100vh;
+  max-height: 100vh;
   margin-top:50px;
 }
 .footer .no-focus-h1 {
